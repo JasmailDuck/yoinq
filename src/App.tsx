@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/core";
 import "./index.css";
+import { Button } from "./components/ui/button";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -13,7 +14,7 @@ function App() {
   }
 
   return (
-    <main className="container bg-black">
+    <main className="container">
       <h1>Welcome to Tauri + React</h1>
 
       <div className="row">
@@ -27,6 +28,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <Button>This is SHACDN</Button>
       <p>Click on the Tauri, Vite, and React logos to learn more.</p>
 
       <form
